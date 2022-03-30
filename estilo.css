@@ -1,0 +1,152 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+header {
+	height: 100vh;
+	background: url(img/bc.jpg);
+	background-size: cover;
+}
+#main {
+	margin: 0 150px 0 150px;
+} 
+.div-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ol {
+	display: flex;
+}
+nav ol li {
+	color: white;
+	list-style: none;
+	margin-right: 30px;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+nav ol li a {
+	text-decoration: none;
+	color: white;
+	padding: 0 0 30px 0;
+}
+nav ol li a:hover {
+	border-bottom: 3px solid dodgerblue;
+}
+.flechas {
+	width: 50px;
+	height: 50;
+	display: none;
+}
+h1 {
+	margin-top: 100px;
+	color: whitesmoke;
+    font-family: 'Lobster', cursive;
+	font-size: 60px;
+}
+
+.parrafo-info {
+	font-size: 15px;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 400;
+}
+.parrafo-info a{
+	color: whitesmoke;
+}
+#boton {
+	margin-top: 50px;
+}
+#boton a {
+	padding: 15px 25px 15px 25px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 900;
+	color: whitesmoke;
+	background: rgba(0, 0, 0, 0.5);
+}
+#boton a:hover {
+	background: rgba(255, 255, 255, 0.5);
+	color: black;
+	transition: 0.5s;
+}
+#proyectos {
+	margin-top: 50px;
+}
+.div-proyectos {
+	margin: 0 150px 0 150px;
+	display: flex;
+}
+.div-proyectos img {
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.proyect-d {
+	text-align: center;
+}
+.ver {
+	margin: 30px 0 30px 0;
+}
+.ver a{
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+	font-size: 15px;
+	background: lightyellow;
+	padding: 15px 55px 15px 55px;
+
+}
+.div-proyectos p{
+	font-family: sans-serif;
+	font-weight: 400;
+}
+footer {
+	margin-top: 500px;
+}
+#contact {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+/*media Query*/
+
+@media (max-width: 1080px) {
+	.flechas {
+		display: inline;
+		background: rgba(255, 255, 255, 0.4);
+		border-radius: 10px;
+	}
+	#FD {
+		margin-left: 10px;
+	}
+	#main {
+		margin: 0;
+	}
+	ol li{
+		display: none;
+	}
+	ol li a {
+		display: none;
+	}
+	.titul {
+		text-align: center;
+	}
+	.parrafo-info {
+		text-align: center;
+	}
+	#boton {
+		text-align: center;
+	}
+	.div-proyectos {
+		display: grid;
+		margin: 0;
+		text-align: center;
+	}
+	#proyectos {
+		margin: 20px 0 0 0;
+	}
+
+}
